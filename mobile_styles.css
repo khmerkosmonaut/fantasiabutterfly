@@ -72,7 +72,7 @@ body {
     font-family: Georgia, serif;
     font-size: 20px; /* Default font size for desktop */
     text-align: center;
-    background-image: url('background.jpg'); /* Ensure this path is correct */
+    background-image: url('images/background.jpg'); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -323,36 +323,13 @@ button.hover {
 .answer {
     text-align: left;
 }
-/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
-    body {
-        font-size: 4vw; /* Responsive font size for mobile */
-    }
-
-    h1 {
-        font-size: 6vw; /* Responsive font size for mobile */
-    }
-
-    h2, h3 {
-        font-size: 5vw; /* Responsive font size for mobile */
-    }
-
-    .textbox {
-        padding: 5vw; /* Responsive padding for mobile */
-        margin: 5vw auto; /* Responsive margin for mobile */
-    }
-
     .sidebar {
-        position: fixed;
+        position: relative;
         width: 100%;
         height: auto;
         padding: 10px;
         z-index: 4;
-        display: none; /* Hide sidebar by default */
-    }
-
-    .sidebar.show {
-        display: block; /* Show sidebar when toggled */
     }
 
     .sidebar ul {
@@ -366,44 +343,35 @@ button.hover {
     }
 
     .sidebar a {
-        font-size: 4vw; /* Adjust font size for smaller screens */
+        font-size: 24px; /* Adjust font size for smaller screens */
         padding: 10px;
     }
 
     .container {
         margin-top: 20px; /* Add some margin to avoid overlap */
     }
-
-    .front-photo, .resized-photo, .onlineshop {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .nav-button {
-        display: block; /* Show button on mobile */
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 20px;
-        background-color: rgba(0, 0, 0, 0.4);
+    .menu-items.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #007bff;
         color: white;
+        padding: 10px;
         border: none;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         cursor: pointer;
-        z-index: 1000;
-        backdrop-filter: blur(5px);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-
-    .nav-button:hover {
-        color: #00ff8c;
-    }
-
-    .nav-button:hover::after {
-        content: 'Ф';
-        margin-left: 5px;
+        margin-bottom: 10px;
     }
 }
 
@@ -429,4 +397,11 @@ button.hover {
 .nav-button:hover::after {
     content: 'Ф';
     margin-left: 5px;
+}
+/* Media query for screens smaller than 768px */
+
+@media (max-width: 768px) {
+    .nav-button {
+        display: block; /* Show button on mobile */
+    }
 }
