@@ -73,7 +73,7 @@ body {
     font-size: 20px; /* Default font size for desktop */
     text-align: center;
     background-image: url('background.jpg'); /* Ensure this path is correct */
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
