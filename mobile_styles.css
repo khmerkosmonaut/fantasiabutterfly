@@ -323,7 +323,7 @@ button.hover {
 .answer {
     text-align: left;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .sidebar {
         position: relative;
         width: 100%;
@@ -352,7 +352,7 @@ button.hover {
     }
 }
 /* Media query for screens smaller than 768px */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .menu-items {
         display: none;
         flex-direction: column;
@@ -400,7 +400,7 @@ button.hover {
 }
 /* Media query for screens smaller than 768px */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .nav-button {
         display: block; /* Show button on mobile */
     }
