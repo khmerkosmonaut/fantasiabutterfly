@@ -350,6 +350,12 @@ button.hover {
     .container {
         margin-top: 20px; /* Add some margin to avoid overlap */
     }
+
+    .butterfly-container {
+        width:95%;
+        padding: 10px;
+    }
+        
 }
 /* Media query for screens smaller than 768px */
 @media (max-width: 1200px) {
