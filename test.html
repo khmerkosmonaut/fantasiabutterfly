@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia Butterfly Co.</title>
+    <link rel="stylesheet" href="mobile_styles.css">
+    <link rel="icon" type="image/png" href="IMG_0253.PNG">
+</head>
+<body>
+    <div id="butterfly-container">
+        <img id="butterfly" src="butterfly.png" alt="Butterfly">
+        <img id="gold_butterfly" src="gold_butterfly.png" alt="Gold_Butterfly">
+        <img id="aqua_butterfly" src="aqua_butterfly.png" alt="Aqua_Butterfly">
+        <img id="green_butterfly" src="green_butterfly.png" alt="Green_Butterfly">
+        <img id="sunset_butterfly" src="sunset_butterfly.png" alt="Sunset_Butterfly">
+        <img id="purple_butterfly" src="purple_butterfly.png" alt="Purple_Butterfly">
+        <img id="atlas_butterfly" src="atlas_butterfly.png" alt="Atlas_Butterfly">
+        <img id="forest_moth" src="forest_moth.png" alt="Forest_Moth">
+    </div>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#onlineshop">Online Shop</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#socialmedia">Social Media</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+            </ul>
+        </nav>
+        <button id="navButton" class="nav-button">Menu</button>
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.menu-items').classList.toggle('show');
+            });
+        </script>
+        <div class="container">
+            <div id="home" class="textbox">
+                <h1><img src="favicon.png" width="225" height="205"></h1>
+                <h1>Fantasia Butterfly Co.</h1>
+                <h2>Cape Cod, MA</h2>
+                <h3>Making fantasies, reality.</h3>
+                <p>A father and daughter operated business. We make ornaments from real butterflies.</p>
+                <p>Place them in arrangements, potted plants, or where ever your heart desires.</p>
+                <p>Est. 2024</p>
+                <div class="container">
+                <img src="top_pic.JPEG" alt="Photo of butterfly ornament." class="front-photo">
+                </div>
+            </div>
+                
+            <div id="aboutus" class="textbox">
+                <h1>About Us</h1>
+                <div class="container">
+                <img src="plymouth_photo.JPEG" alt="Photo of founder and junior-direcor." class="resized-photo">
+                </div>
+                <p>Started by father and daughter, business partners, and best friends, Fantasia Butterfly Company metamorphosizsed from what was just an idea.
+                   We operate out of the coastal peninusula of Cape Cod, observing sunsets in our free time. 
+                   We specialize in the art of spreading and preserving visually captivating specimens, transforming mother
+                   nature's beauty into timeless displays and bringing them into your home. Thank you for supporting us.</p>
+            </div> 
+
+            <div id="onlineshop" class="textbox">
+                <h1>Online Shop</h1>
+                <div class="container">
+                <img src="onlinestore2.JPEG" alt="Butterfly Display" class="onlineshop">
+                </div>
+                <p>You can purchase butterflies from our Etsy page.</p>
+                <a href="https://www.etsy.com/shop/fantasiabutterfly" target="_blank" rel="noopener noreferrer" class="button">Visit Online Store</a>
+                <p>For special inquiries contact info@fantasiabutterfly.com</p>
+            </div>
+
+            <div id="gallery" class="textbox">
+                <h1>Gallery</h1>
+                <p>Click on image to enlarge</p>
+                <div class="slideshow-wrapper">
+                    <button class="prev" onclick="scrollGallery(-1)">&#10094;</button>
+                    <div class="scroll-container">
+                      <img src="close_salt.JPEG" class="gallery-item">
+                      <img src="close.JPEG" class="gallery-item">
+                      <img src="gallery4.JPEG" class="gallery-item">
+                      <img src="gallery5.JPEG" class="gallery-item">
+                      <img src="gallery6.JPEG" class="gallery-item">
+                      <img src="gallery7.JPEG" class="gallery-item">
+                      <img src="gallery1.JPEG" class="gallery-item">
+                      <img src="hidden_face.JPEG" class="gallery-item">
+                      <img src="nice.JPEG" class="gallery-item">
+                      <img src="gallery2.JPEG" class="gallery-item">
+                      <img src="simon.JPEG" class="gallery-item">
+                      <img src="simon2.JPEG" class="gallery-item">
+                      <img src="potted.JPEG" class="gallery-item">
+                      <img src="salty.JPEG" class="gallery-item">
+                      <img src="studio.JPEG" class="gallery-item">
+                    </div>
+                    <button class="next" onclick="scrollGallery(1)">&#10095;</button>
+                </div>
+            </div>
+            <div id="socialmedia" class="textbox">
+            <h1>Social Media</h1>
+            <p>Select on links to visit our pages.</p>
+                <div><a href="https://www.facebook.com/share/18iThxgNFo/?mibextid=wwXlfr" class="social-link">Facebook</a></div>
+                <div><a href="https://www.instagram.com/fantasiabutterfly" class="social-link">Instagram</a></div>
+                <div><a href="https://www.tiktok.com/@fantasiabutterfly" class="social-link">TikTok</a></div>
+            </div>
+            <div id="FAQ" class="textbox">
+                <h1>FAQ</h1>
+                <p class="question">How do you source your butterflies?</p>
+                <p class="answer">We get our butterflies from overseas. Families farm them, none are taken from their environment.</p>
+                <p class="question">How are the butteflies euthanized?</p>
+                <p class="answer">They are frozen, which causes them to close. We rehydrate them, spread them and then they are air-dried.</p>
+                <p class="question">How long do they last?</p>
+                <p class="answer">They can last indefinitely, but they are parishable. For the longest life keep away from humidity, drafts and direct sunlight.</p>
+                <p class="question">Do you accept returns?</p>
+                <p class="answer">Read "General RBO Information" on Esty for complete information.</p>
+            </div>
+            <!-- Modal Structure -->
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollContainer = document.querySelector(".scroll-container");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+
+        if (scrollContainer && prevButton && nextButton) {
+            prevButton.addEventListener("click", function () {
+                scrollContainer.scrollBy({ left: -200, behavior: "smooth" });
+            });
+
+            nextButton.addEventListener("click", function () {
+                scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
+            });
+        } else {
+            console.error("Gallery elements not found");
+        }
+
+        // Modal functionality
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const captionText = document.getElementById("caption");
+        const images = document.querySelectorAll(".gallery-item");
+        const span = document.getElementsByClassName("close")[0];
+
+        images.forEach(image => {
+            image.addEventListener("click", function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            });
+        });
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const butterflies = [
+            "#butterfly",
+            "#gold_butterfly",
+            "#aqua_butterfly",
+            "#green_butterfly",
+            "#sunset_butterfly",
+            "#purple_butterfly",
+            "#atlas_butterfly",
+            "#forest_moth"
+        ];
+
+        butterflies.forEach(butterfly => {
+            let element = document.querySelector(butterfly);
+
+            if (element) {
+                console.log(`Animating ${butterfly}`);
+
+                // **Set a random starting position**
+                let startX = Math.random() * (window.innerWidth - element.clientWidth);
+                let startY = Math.random() * (window.innerHeight - element.clientHeight);
+                gsap.set(element, { x: startX, y: startY });
+
+                // **Smooth Screensaver-Like Movement**
+                function moveRandomly() {
+                    gsap.to(element, {
+                        x: Math.random() * (window.innerWidth - element.clientWidth),
+                        y: Math.random() * (window.innerHeight - element.clientHeight),
+                        duration: 10 + Math.random() * 10, // Random duration (5-10s)
+                        ease: "power1.inOut",
+                        onComplete: moveRandomly // Keeps looping movement
+                    });
+                }
+                moveRandomly(); // Start movement
+
+                // **Fluttering Effect**
+                gsap.to(element, {
+                    scale: 1.1,
+                    rotation: 10,
+                    repeat: -1,
+                    yoyo: true,
+                    duration: 0.2,
+                    ease: "power1.inOut"
+                });
+
+                // **Gentle Floating Effect**
+                gsap.to(element, {
+                    y: "+=5",
+                    repeat: -1,
+                    yoyo: true,
+                    duration: 1,
+                    ease: "sine.inOut"
+                });
+            } else {
+                console.error(`Element not found: ${butterfly}`);
+            }
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const navButton = document.getElementById("navButton");
+        const nav = document.querySelector("nav.sidebar");
+
+        navButton.addEventListener("click", function () {
+            nav.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+
+</script>
+</body>
+</html>
